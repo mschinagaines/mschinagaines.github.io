@@ -62,7 +62,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 body {
   margin: 0;
   font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 1.15rem;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
@@ -8916,6 +8916,7 @@ button.bg-black:focus {
   .mb-lg-0,
 .my-lg-0 {
     margin-bottom: 0 !important;
+    margin-top: 2rem;
   }
 
   .ml-lg-0,
@@ -9035,7 +9036,7 @@ button.bg-black:focus {
 
   .mb-lg-5,
 .my-lg-5 {
-    margin-bottom: 3rem !important;
+    margin-bottom: 5.5rem !important;
   }
 
   .ml-lg-5,
@@ -9836,6 +9837,7 @@ button.bg-black:focus {
     text-align: center !important;
   }
 }
+/*
 @media (min-width: 992px) {
   .text-lg-left {
     text-align: left !important;
@@ -9844,6 +9846,8 @@ button.bg-black:focus {
   .text-lg-right {
     text-align: right !important;
   }
+
+  */
 
   .text-lg-center {
     text-align: center !important;
@@ -10285,7 +10289,7 @@ body {
 }
 
 .signup-section {
-  padding: 10rem 0;
+  padding: 6rem 0;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/bg-signup.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -10302,10 +10306,10 @@ body {
   letter-spacing: 0.15rem;
   border: 0;
 }
-
+/*
 .contact-section {
-  padding-top: 5rem;
-}
+  padding-top: 1rem;
+} */
 .contact-section .card {
   border: 0;
   border-bottom: 0.25rem solid #64a19d;
@@ -10321,9 +10325,10 @@ body {
   border-width: 0.25rem;
   width: 3rem;
 }
+/*
 .contact-section .social {
   margin-top: 5rem;
-}
+} */
 .contact-section .social a {
   text-align: center;
   height: 3rem;
@@ -10341,7 +10346,7 @@ body {
 }
 
 .footer {
-  padding: 5rem 0;
+  padding: 3rem 0;
 }
 
 /*----------------------------------------- The switch - the box around the slider -----------------------------------------*/
@@ -10393,7 +10398,6 @@ body {
   font-size: 13px;
   font-weight: bolder;
 }
-}
 
 input:checked + .slider {
   background-color: rgba(255, 255, 255, 0.6);
@@ -10440,6 +10444,10 @@ input:checked + .slider:before {
   border: 0;
 }
 
+.v-align {
+  padding: 15px 0px;
+}
+
 .margintop {
   margin-top: 1.5rem;
 }
@@ -10482,10 +10490,242 @@ input:checked + .slider:before {
 
 /*Heading */
 .heading {
-  font-size: 100px;
+  font-size: 300%;
   color: var(--primary)
 }
 
 .projectbtn {
   margin: 0.3rem 0.3rem;
+  padding: 0.3rem;
 }
+
+/*-------------------------------------------------------------- Contact Form --------------------------------------------------------------*/
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+  color: #bbb5af;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+  color: #bbb5af;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #aca49c;
+  font-size: 0.875em;
+}
+
+input:focus::placeholder, textarea::focus:placeholder {
+  color: #bbb5af;
+}
+
+input::-ms-placeholder, textarea::-ms-placeholder {
+  color: #9fac9c;
+  font-size: 0.875em;
+}
+
+input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+  color: #bbb5af;
+}
+
+/*on hover placeholder */
+
+input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+  color: #cbc6c1;
+}
+
+input:hover::placeholder, textarea:hover::placeholder {
+  color: #e2dedb;
+  font-size: 0.875em;
+}
+
+input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+  color: #cbc6c1;
+}
+
+.contactform {
+  position: relative;
+  font-size: 2.3em;
+  text-align: center;
+  letter-spacing: 7px;
+}
+
+#form {
+  position: relative;
+  width: inherit;
+  margin: 25px auto 0;
+}
+
+form
+{
+  margin-left: 25%;
+  margin-right:25%;
+  width: 50%;
+}
+
+.formelements {
+  font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1em;
+  display: inline-block;
+  height: 65px;
+  width: 50vh;
+  padding: 5px 15px;
+  background: rgba(255, 255, 255, 0.7);
+  outline: none;
+  color: var(--gray-dark);
+  border-top: 1px solid rgb(179, 172, 167);
+  border-right: 1px solid rgb(179, 172, 167);
+  border-left: 1px solid rgb(179, 172, 167);
+  border-image: initial;
+  border-bottom: none;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+input:hover {
+  background: #b3aca7;
+  color: var(--gray-dark);
+}
+
+textarea {
+  height: 200px;
+  max-height: 300px;
+  padding: 15px;
+  
+  background: transparent;
+  outline: none;
+  
+  color: #3a3734;
+  font-size: 0.875em;
+  
+  border: solid 1px #b3aca7;
+  
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+}
+
+/*hover text area */
+textarea:hover {
+  background: #b3aca7;
+  color: var(--gray-dark);
+}
+
+#submit {
+  width: 50vh;
+  height: 6vh;
+  
+  padding: 0;
+  margin-top: 10px;
+  
+  font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 0.875em;
+  color: var(--gray-dark);
+  background-color: var(--primary);
+  
+  outline:none;
+  cursor: pointer;
+  
+  border: solid 1px #b3aca7;
+  border-top: none;
+}
+
+#submit:hover {
+  color: var(--gray-dark);
+  background-color: var(--primary);
+}
+
+.heading1 {
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 2.5rem;
+  width: 50vh;
+
+  display: inline-block;
+  width: 50vh;;
+  background: rgba(255, 255, 255, 0.7);
+  outline: none;
+  transition: all 0.3s ease-in-out 0s;
+  overflow: initial;
+  padding-top: 0.2em;
+  line-height: 2.5rem;
+  letter-spacing: 0.8rem;
+  background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.1));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.formcontainer {
+  display: block;
+}
+
+#status {
+  margin-top: 10px;
+}
+
+.bigemoji {
+  font-size: 45px;
+}
+
+.flip {
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.rep-projects {
+  display: none;
+}
+
+@media (max-width: 280px) {
+  .heading1 {
+    font-size: 97%;
+    width: 90%;
+  }
+
+  #submit {
+    width: 90%;
+  }
+
+  .formelements {
+    width: 90%;
+  }
+
+}
+
+.text-shadow {
+  font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+
