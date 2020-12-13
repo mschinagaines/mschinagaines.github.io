@@ -9837,9 +9837,9 @@ button.bg-black:focus {
     text-align: center !important;
   }
 }
-/*
+
 @media (min-width: 992px) {
-  .text-lg-left {
+  /*.text-lg-left {
     text-align: left !important;
   }
 
@@ -10524,7 +10524,7 @@ input::placeholder, textarea::placeholder {
 }
 
 input:focus::placeholder, textarea::focus:placeholder {
-  color: #bbb5af;
+  color: var(--white);
 }
 
 input::-ms-placeholder, textarea::-ms-placeholder {
@@ -10600,10 +10600,12 @@ form
   display: inline-block;
   height: 65px;
   width: 50vh;
-  padding: 5px 15px;
+  padding: 20px 15px;
+  margin-top: 5px;
   background: rgba(255, 255, 255, 0.7);
   outline: none;
   color: var(--gray-dark);
+  border-radius: 5px;
   border-top: 1px solid rgb(179, 172, 167);
   border-right: 1px solid rgb(179, 172, 167);
   border-left: 1px solid rgb(179, 172, 167);
@@ -10619,16 +10621,15 @@ input:hover {
 
 textarea {
   height: 200px;
-  max-height: 300px;
-  padding: 15px;
-  
+  padding: 15px 15px;
   background: transparent;
   outline: none;
   
   color: #3a3734;
-  font-size: 0.875em;
+  font-size: 1em;
   
   border: solid 1px #b3aca7;
+  border-radius: 5px;
   
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -10651,7 +10652,7 @@ textarea:hover {
   
   font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.875em;
-  color: var(--gray-dark);
+  color: white;
   background-color: var(--primary);
   
   outline:none;
@@ -10659,10 +10660,11 @@ textarea:hover {
   
   border: solid 1px #b3aca7;
   border-top: none;
+  border-radius: 5px;
 }
 
 #submit:hover {
-  color: var(--gray-dark);
+  color: var(--gray);
   background-color: var(--primary);
 }
 
@@ -10708,6 +10710,52 @@ textarea:hover {
   display: none;
 }
 
+.btnsmalllang {
+  display: inline-flex;
+  padding: 29px 5px;
+  vertical-align: center;
+}
+
+.langimg {
+  width:20px;
+  height: 20px;
+}
+
+@media (max-width: 411px) {
+  .formelements, #submit, .heading1 {
+    width: 37vh;
+  }
+
+  .text-white-50 {
+    font-size: 80%;
+  }
+
+  .masthead {
+    padding: 3rem 0rem;
+  }
+}
+
+@media (max-width: 398px) {
+  .formelements, #submit, .heading1 {
+    width: 40vh;
+  }
+
+  .text-white-50 {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 360px) {
+  .heading1 {
+    width: 35vh;
+    font-size: 130%;
+  }
+
+  .text-white-50 {
+    font-size: 80%;
+  }
+}
+
 @media (max-width: 280px) {
   .heading1 {
     font-size: 97%;
@@ -10721,11 +10769,8 @@ textarea:hover {
   .formelements {
     width: 90%;
   }
-
 }
 
 .text-shadow {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
-
-
