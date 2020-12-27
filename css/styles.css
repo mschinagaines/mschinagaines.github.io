@@ -10774,3 +10774,7 @@ textarea:hover {
 .text-shadow {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+.animatedcardspara {
+  margin-block-end: 0em;
+}
