@@ -82,11 +82,11 @@
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/bg-masthead.jpg" alt="" /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
-                            <h4>&#128293Featured: Shoreline</h4>
-                            <p class="text-black-50 mb-0">I am a description for the featured section.</p>
+                            <h4>&#128293<b>Featured Project:</b> <br>JWST Countdown Timer</h4>
+                            <p class="text-black-50 mb-0">JWST is the 10 billion dollar successor to the Hubble Space Telescope developed by NASA. It will have see in far broader wavelengths of light in comparison to Hubble. This is a countdown timer for when JWST is launched from  Cape Canaveral, Florida on October 31st, 2021.</p>
                             <span class= "margintop">
-                                <a class="btn btn-primary projectbtn" href="#">Live Demo</a>
-                                <a class="btn btn-primary projectbtn" href="#">Code</a>
+                                <a class="btn btn-primary projectbtn" href="./projects/JWST Countdown Timer/index.html">Live Demo</a>
+                                <a class="btn btn-primary projectbtn" href="https://github.com/mschinagaines/JWST-CountdownTimer">Code</a>
                             </span>
                         </div>
                     </div>
@@ -170,7 +170,7 @@
                         <div class="contactform text-uppercase heading1">Contact Me</div>
 
                         <div class="formcontainer">
-                        <form id="form" method="POST" action="./js/mail.php" class="topBefore" onsubmit="submitForm(); return false;"> <!-- allows function submitForm to run when it is being submitted-->
+                        <form id="form" method="POST" action="form.php" class="topBefore" onsubmit="submitForm(); return false;"> <!-- allows function submitForm to run when it is being submitted-->
                                 <input id="n" class="formelements" type="text" placeholder="NAME" required>
                                 <input id="e" class="formelements" type="email" placeholder="E-MAIL" required>
                                 <textarea id="m" class="formelements" type="text" placeholder="WRITE YOUR MESSAGE HERE" oninput='this.style.height = "";this.style.height = this.scrollHeight + "px"' required></textarea>
@@ -205,6 +205,8 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Third party plugin JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Validation Script for Contact Form-->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
     </body>
