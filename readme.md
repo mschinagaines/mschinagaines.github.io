@@ -10,7 +10,7 @@
 ## Preview 
 
 <p align="center">
-  <img src="./assets/img/mock-up.png" alt="Mock-up">    
+  <img src="./assets/img/mock-up.PNG" alt="Mock-up">    
   <p align="center"><a href="https://mschinagaines.github.io/">Live Version</a></p>
  
 </p>
